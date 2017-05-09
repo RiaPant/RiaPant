@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<!-- scripts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Languages', 'Percentage'],
+          ['Java',     50],
+          ['C',      26.67],
+          ['C++',  16.67],
+          ['Python', 6.67],
+        ]);
+
+        var options = {
+          backgroundColor: 'transparent',
+          pieSliceTextStyle:{fontSize:16},
+          pieHole: 0.4,
+          pieSliceText: 'label',
+          chartArea:{left:10,top:20,width:"100%",height:"100%"},
+          legend: {position: 'none'}, 
+          titletextposition: 'none',
+           };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+   </script>   
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Languages', 'Percentage'],
+          ['MySQL DB', 20],
+          ['Django & Python',     40],
+          ['Javascript',  20],
+          ['HTML and CSS',      20],
+          
+          
+        ]);
+
+        var options = {
+          backgroundColor: 'transparent',
+         
+          pieHole: 0.4,
+          pieSliceText: 'label',
+          pieSliceTextStyle:{fontSize:16},
+          chartArea:{left:10,top:20,width:"100%",height:"100%"},
+          legend: {position: 'none'}, 
+          titletextposition: 'none',
+           };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+        chart.draw(data, options);
+      }
+   </script>   
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/jquery.textillate.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+</script></head>
+<title>Ria Pant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner 
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">-->
+  <a href="#first" class="smoothscroll w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#skill" class="smoothscroll w3-bar-item w3-button w3-padding-large w3-hover-black smoothScroll">
+    <i class="fa fa-tachometer w3-xxlarge"></i>
+    <p>SKILLSET</p>
+  </a>
+  <a href="#project" class="smoothscroll w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="icon fa fa-briefcase w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+ <!-- <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>-->
+</nav>
+
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#first" class="smoothscroll w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#skill" class="smoothscroll w3-bar-item w3-button" style="width:25% !important">SKILLSET</a>
+    <a href="#project" class="smoothscroll w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <section id="first" >
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Ria Pant</h1>
+    <p>Undergraduate Computer Science </p>
+    <!--<img src ="1.jpg">
+    <img src="1.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <center> <h2 class="w3-text-light-grey"><br>< About Me </h2>
+    <hr style="width:200px" class="w3-opacity"><br>
+   <p ><a href="mailto:riapant2016@gmail.com" style="text-decoration: none;">Mail</a> &nbsp || &nbsp <a style="text-decoration: none;" href="https://twitter.com/ria_pant">Twitter</a> &nbsp || &nbsp <a style="text-decoration: none;" href="https://linkedin.com/in/ria-pant-2146a210a">LinkedIN</a> &nbsp || &nbsp <a style="text-decoration: none;" href="https://riapant.wordpress.com/">Blog</a>
+    </p>
+   <a style="text-decoration: none;" href="resume/resume.pdf" download="ria"> <button class="w3-button w3-light-grey w3-padding-large w3-section">
+    <i class="fa fa-download"></i> Download Resume
+    </button></a></center>
+    <br>
+     </div>
+    </section>
+
+   
+    <section id="skill">
+    <div> <h2 class="w3-text-light-grey">My Skills</h2></div>
+    <div style="padding: 20px; overflow: auto;
+  width: 100%">
+    <div style="display :inline-block;"><center><h5>Competitive Programming Languages</h5></center><div id="donutchart" style="width: 380px; height: 380px;"></div></div>
+    <div style="float: right  ;display :inline-block;"><center><h5>Web Development</h5></center><div id="donutchart1" style="width: 380px; height: 380px;"></div></div>
+    </div>
+    
+
+ <div class="w3-row w3-center  w3-section w3-light-grey" >
+      <div class="w3-quarter w3-section">
+        Game Development using <br>
+       <span class="w3-xlarge"> Phasor.io</span>
+      </div>
+    
+    <div class="w3-quarter w3-section">
+        <span class="w3-large"> Facebook</span><br> <span class="w3-xlarge">Graph API</span>
+      </div>
+    
+   <div class="w3-quarter w3-section">
+      Non-technical<br> <span class="w3-xlarge">Photoshop</span>
+      </div>
+
+ <div class="w3-quarter w3-section">
+       Non-technical<br> <span class="w3-xlarge">Content Writing</span>
+      </div>
+
+ </div>
+ <br>
+ 
+ </section>
+    <section id = "project">
+    <div><h2 class="w3-text-light-grey">Projects</h2></div>
+       <div class="container">  
+      <div class="main">
+        <ul id="og-grid" class="og-grid">
+          <li>
+            <a href="https://github.com/RiaPant/The-Viral-Times" data-largesrc="images/1.jpg" data-title="The Viral Times" data-description="<strong>AIM:</strong> To identify the most viral and popular page amongst the vast number of pages available on Facebook platform. Also display the results in the forms of charts. <br> 
+
+            <strong>Developed a metric:</strong> Page score in order to identify the required page.<br>
+
+            <strong>Technologies Used:</strong> Facebook Graph API, python, mySQL database, HTML and CSS, Google Charts API, Bootstrap.">
+            <img src="images/thumbs/1.jpg" alt="img01"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/RiaPant/acms-1" data-largesrc="images/2.jpg" data-title="Amazon's Locker System" data-description="<strong>AIM:</strong>To create a locker management system for controlling and vacating the lockers quickly and efficiently.<br>
+            <strong>Technologies Used:</strong> Django and Python, Mysql, and Python libraries">
+            <img src="images/thumbs/2.jpg" alt="img01"/>
+            </a>
+          </li>
+          <li>
+           <a href="https://github.com/RiaPant/Multipurpose-Safety-Device" data-largesrc="images/3.jpg" data-title="Safety" data-description="<strong>AIM:</strong>To Create a prototype of women’s safety watch.<br>
+<strong>Features</strong>: Time display, Call, Message, A button trigerred Alarm service, Photo clicking enabled in burst mode, Cloud support(Google Drive), GPS support. <br>
+<strong>SOC Used</strong>: Rasperry Pi2 <strong>Language Used</strong>: Python">
+            <img src="images/thumbs/3.jpg" alt="img01"/>
+            </a> 
+          </li>
+          <li>
+            <a href="https://github.com/RiaPant/Game-Pokemon" data-largesrc="images/4.jpg" data-title="Pokemon Game" data-description="Pokemon basedd arcade game using Phasor.io with various levels.">
+              <img src="images/thumbs/4.jpg" alt="img02"/>
+            </a>
+          </li>
+           <li>
+            <a href="https://github.com/RiaPant/Othello-game" data-largesrc="images/5.jpg" data-title="Othello" data-description="Coded the logic for the game Othello in Java. <br>Othello is a multi-player game played on an 8×8 uncheckered board. The player with the maximum number of discs in the end wins">
+              <img src="images/thumbs/5.jpg" alt="img02"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/RiaPant/student" data-largesrc="images/6.jpg" data-title="Student Marks Management Portal" data-description="Using python and django, a student managing portal has been created.<br> A student can add his/her number and view the class ranking.<br> The marks have been divided into groups marked by colours">
+              <img src="images/thumbs/6.jpg" alt="img06"/>
+            </a>
+          </li>
+                                            
+        </ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
+
+    </section>
+    
+
+
+<!--
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+   
+-->
+    
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
